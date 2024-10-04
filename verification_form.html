@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificación de Cuenta</title>
+</head>
+<body>
+    <h1>Verificación de Cuenta</h1>
+    <form action="RF_registro_usr.php" method="post">
+        <input type="text" placeholder="Código de verificación" name="codigo" required>
+        <input type="hidden" name="email" value="<?php echo htmlspecialchars($_GET['email']); ?>"> <!-- Pass email -->
+        <button type="submit" name="verificar">Verificar</button>
+    </form>
+    
+</body>
+</html>
